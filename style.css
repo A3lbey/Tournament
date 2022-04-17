@@ -642,6 +642,7 @@ footer ul li a {
 @media (max-width: 991px) {
     .flex {
         max-width: 720px;
+        margin-right:5%;
     }
 
     nav ul li {
@@ -660,6 +661,11 @@ footer ul li a {
     #game-types-boxes .box {
         flex-basis: 50%;
         margin-left: 5px;
+        position:relative;
+        margin:1% 25%;
+        
+        
+      
     }
     #tournaments .box {
         flex-basis: 42%;
@@ -789,7 +795,9 @@ footer ul li a {
         padding: 60px 0;
     }
 
-    #game-types-boxes .box,
+    #game-types-boxes .box{
+        
+    }
     #recent-games .box {
         flex-basis: 100%;
         margin-bottom: 30px;
@@ -835,6 +843,14 @@ footer ul li a {
     .logo img {
         width: 150px;
         margin-top: 2px;
+    }
+    .flex {
+        max-width: 320px;
+    
+    }
+    #game-types-boxes{
+        margin-left:5%;
+     
     }
 
     #login-register-button {
