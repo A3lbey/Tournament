@@ -97,7 +97,7 @@ p, label, strong {
 
 /* start: header styles */
 header {
-    background-color: #131313;
+    background-color: #4e4949;
     padding: 20px 0;
     position: relative;
     border-bottom: 1px solid #FFB320;
@@ -105,7 +105,7 @@ header {
 
 .hamburger-menu {
     background-color: transparent;
-    border: 1px solid #FFB320;
+    border: 1px solid #00412b;
     padding: 3px 5px;
     width: 30px;
     cursor: pointer;
@@ -115,7 +115,7 @@ header {
 .hamburger-menu .strip {
     display: block;
     height: 1px;
-    background-color: #FFB320;
+    background-color: #42fdbf;
     margin: 4px 0;
 }
 
@@ -211,16 +211,16 @@ nav ul li a:hover {
 
 #latest-news .flex h5 {
     flex-basis: 25%;
-    background-color: #FFB320;
+    background-color: #39dfa7;
     padding: 25px;
     margin: 0;
     text-align: right;
-    color: #eee;
+    color: rgb(54, 54, 54);
     font-size: 1.2em;
 }
 
 #latest-news-container {
-    background-color: #131313;
+    background-color: #363535;
     position: relative;
     flex-basis: 75%;
     padding: 25px;
@@ -254,6 +254,7 @@ nav ul li a:hover {
 #game-types-boxes .box.strategy {
     background: url(IMAGE/pubg.jpg) top center no-repeat;
     background-size: cover;
+    margin: 0 5px;
 }
 
 #game-types-boxes .box.rpg {
@@ -264,6 +265,7 @@ nav ul li a:hover {
 #game-types-boxes .box.racing {
     background: url(IMAGE/fortnite.jpg) top center no-repeat;
     background-size: cover;
+    margin: 0 5px;
 }
 
 #game-types-boxes .box .badge {
@@ -657,8 +659,8 @@ footer ul li a {
 
     #game-types-boxes .box {
         flex-basis: 50%;
+        margin-left: 5px;
     }
-
     #tournaments .box {
         flex-basis: 42%;
     }
