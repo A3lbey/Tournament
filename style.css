@@ -59,20 +59,20 @@ p, label, strong {
 }
 
 .badge.new {
-    background-color: #FF205F;
+    background-color: #f54d7a;
 }
 
 .badge.strategy {
-    background-color: #4EAE60;
+    background-color: #addfe2;
 }
 
 .badge.racing {
-    background-color: #694EAE;
+    background-color: #d75fd4;
 }
 
 .badge.rpg,
 .badge.adventure {
-    background-color: #40ABF5;
+    background-color: #6cc3ff;
 }
 
 .badge.tournaments {
@@ -91,7 +91,7 @@ p, label, strong {
     height: 100%;
     top: 0;
     left: 0;
-    background: rgba(0, 0, 0, 0.7);
+    background: rgb(0 0 0 / 15%);
 }
 /* end: global style rules */
 
@@ -244,30 +244,40 @@ nav ul li a:hover {
     flex-basis: 25%;
     position: relative;
     height: 380px;
+    transition-duration:500ms;
 }
 
 #game-types-boxes .box.new {
     background: url(IMAGE/Valorant.jpg) top center no-repeat;
     background-size: cover;
 }
-
+#game-types-boxes .box.new:hover{
+    transform:rotate(340deg);
+    z-index:1;
+}
 #game-types-boxes .box.strategy {
     background: url(IMAGE/pubg.jpg) top center no-repeat;
     background-size: cover;
     margin: 0 5px;
 }
-
+#game-types-boxes .box.strategy:hover{
+    transform:rotate(-340deg)
+}
 #game-types-boxes .box.rpg {
     background: url(IMAGE/Call\ of\ duty.webp) top center no-repeat;
     background-size: cover;
 }
-
+#game-types-boxes .box.rpg:hover{
+    transform:rotate(360deg)
+}
 #game-types-boxes .box.racing {
     background: url(IMAGE/fortnite.jpg) top center no-repeat;
     background-size: cover;
     margin: 0 5px;
 }
-
+#game-types-boxes .box.racing:hover{
+    transform:rotate(-360deg)
+}
 #game-types-boxes .box .badge {
     position: relative;
     z-index: 2;
@@ -288,6 +298,12 @@ nav ul li a:hover {
     font-size: 0.8em;
     font-weight: 300;
     color: #999;
+}
+.bosx-new{
+    transition-property:background;
+}
+.bosx-new:hover{
+    transform:rotate(45deg);
 }
 /* end: game types styles */
 
