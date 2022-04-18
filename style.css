@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aladin&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Inline+One:ital@1&display=swap');
 body {
     font-family: 'helvetica', 'sans-serif';
     margin: 0;
@@ -27,7 +30,9 @@ h4 {
 }
 
 h5 {
-    font-size: 1.2em;
+    font-size: 1.8em;
+    font-family: 'Rubik Moonrocks', cursive;
+    
 }
 
 a {
@@ -40,7 +45,7 @@ p, label, strong {
     font-weight: 300;
 }
 
-.flex {
+.flex{
     display: flex;
     max-width: 1200px;
     margin: 0 auto;
@@ -211,12 +216,13 @@ nav ul li a:hover {
 
 #latest-news .flex h5 {
     flex-basis: 25%;
-    background-color: #39dfa7;
+    background-color: #64ffcb;
+
     padding: 25px;
     margin: 0;
     text-align: right;
     color: rgb(54, 54, 54);
-    font-size: 1.2em;
+    font-size: 1.8em;
 }
 
 #latest-news-container {
@@ -331,6 +337,22 @@ nav ul li a:hover {
 
 #recent-games h1 {
     text-align: center;
+    font-family: 'Alumni Sans Inline One', cursive;
+    font-size: 80px;
+}
+.box-lower-section h4 {
+    font-family: 'Aladin', cursive;
+    text-align: center;
+    box-shadow: 2px 2px 10px rgb(63, 63, 63);
+    border-radius: 20px;
+    width: 50%;
+    transition: 1s;
+}
+.box-lower-section h4:hover{
+    transform: scale(1.1);
+    box-shadow: 2px 2px 10px #84ffef;
+
+    
 }
 
 #recent-games .box {
@@ -339,8 +361,14 @@ nav ul li a:hover {
     width:50%;
     margin: 0 10px;
     background-color: #fff;
+    box-shadow: 2px 10px 40px #000;
+    transition:1s;
 }
-
+#recent-games .box:hover {
+    transform: scale(1.3);
+    z-index: 1;
+    box-shadow: 2px 10px 40px #4ed6ff;
+}
 #recent-games .box .badge {
     position: absolute;
     top: 20px;
@@ -351,7 +379,6 @@ nav ul li a:hover {
 #recent-games .box img {
     width: 100%;
 }
-
 #recent-games .box .box-lower-section {
     padding: 20px;
 }
@@ -693,10 +720,7 @@ footer ul li a {
         flex-basis: 50%;
         margin-left: 5px;
         position:relative;
-        margin:1% 25%;
-        
-        
-      
+        margin:1% 25%;    
     }
     #tournaments .box {
         flex-basis: 42%;
@@ -714,7 +738,10 @@ footer ul li a {
         margin-left: 0;
         width: 100%;
     }
-    
+    /*recent gaems*/
+    .box-lower-section h4 {  
+        width: 70%;
+    }
     #recent-reviews {
         background: none;
     }
@@ -821,17 +848,29 @@ footer ul li a {
     #latest-news-container {
         flex-basis: 100%;
     }
-
+    /*recent games*/
+    #recent-games .box {
+        position: relative;
+        height:20%;
+        width:50%;
+        margin: 0 10px;
+        background-color: #fff;
+        box-shadow: 2px 10px 40px #000;
+        transition:1s;
+    }
+    #recent-games .box:hover {
+        transform: scale(1.1);
+        z-index: 1;
+        box-shadow: 2px 10px 40px #4ed6ff;
+    }
+ 
     #recent-games {
         padding: 60px 0;
-    }
-
-    #game-types-boxes .box{
-        
     }
     #recent-games .box {
         flex-basis: 100%;
         margin-bottom: 30px;
+        margin-right: 25%;
     }
 
     #recent-games .flex,
@@ -883,7 +922,27 @@ footer ul li a {
         margin-left:5%;
      
     }
-
+    /*recent games start*/
+    #recent-games .box {
+         margin-left: 20%;
+         width: 800px; 
+    }
+    .badge.new{
+        opacity: 80%;
+        margin-left: 19%;
+        margin-top: 25%;
+    }
+    .badge.racing{
+        opacity: 80%;
+        margin-left: 15%;
+        margin-top: 25%;
+    }
+    .badge.adventure{
+        opacity: 80%;
+        margin-left: 6%;
+        margin-top: 25%;  
+    }
+    /*recent games end*/
     #login-register-button {
         padding: 10px;
         font-size: 0.65em;
