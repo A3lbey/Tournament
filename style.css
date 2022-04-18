@@ -492,9 +492,9 @@ nav ul li a:hover {
 
 /* start: recent reviews styles */
 #recent-reviews {
-    background: url('https://onclickwebdesign.com/wp-content/uploads/recent_reviews_bg.png') top right no-repeat;
+    background: url('') top right no-repeat;
     background-size: cover;
-    padding: 75px 0 50px;
+    padding: 75px 0 50px;  
 }
 
 #recent-reviews h1 {
@@ -506,6 +506,8 @@ nav ul li a:hover {
     flex-basis: 23%;
     position: relative;
     text-align: center;
+    margin: 10px;
+  
 }
 
 #recent-reviews .box .rating-badge {
@@ -537,12 +539,17 @@ nav ul li a:hover {
     overflow: hidden;
 }
 
-#recent-reviews .box .recent-reviews-image img {
-    width: 100%;
+.recent-reviews-image img {
+    width: 400px;
+    border-radius: 10px;    
 }
 
 #recent-reviews .box p {
     color: #999;
+}
+.recent-reviews-image img{
+    width:  400px;
+    height: 400px;
 }
 /* end: recent reviews styles */
 
