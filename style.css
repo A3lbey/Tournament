@@ -417,18 +417,41 @@ nav ul li a:hover {
     top: -32px;
     left: 15px;
 }
-
+/*--Start Tournaments baouns hover--*/
 #tournaments .box {
     background-color: #252525;
     padding: 70px 20px 40px;
     flex-basis: 45%;
     position: relative;
-    transition: all 100ms;        
+    transition: all 200ms;
+    -webkit-animation: ani 5s infinite;
+            
 }
 #tournaments .box:hover {
-      animation: ani 6s infinite;
-      cursor: pointer;
-}
+    animation:backwards;
+    transform: scale(1.1);
+    cursor: pointer;
+    z-index: 3;
+    box-shadow: 2px 2px 10px #000;
+  }
+#tournaments .box:hover:before {
+    content: "";
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    top: calc(50% - 60px);
+    left: calc(50% - 60px);
+  }
+#tournaments .box:active {
+    opacity: 0.7;
+  }
+  @-webkit-keyframes ani {
+    50% {
+      transform: scale(0.8);
+    }
+  } 
+
+ /*--End Tournaments baouns hover--*/ 
 #tournaments .box .tournaments-image {
     float: left;
     width: 30%;
