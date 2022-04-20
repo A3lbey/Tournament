@@ -102,10 +102,11 @@ p, label, strong {
 
 /* start: header styles */
 header {
-    background-color: #4e4949;
-    padding: 20px 0;
+    background-color: #d3d3d3;
+    padding: 10px 0;
+    border-radius: 50px;
     position: relative;
-    border-bottom: 1px solid #FFB320;
+    border-bottom: 3px solid #7bffd3;
 }
 
 .hamburger-menu {
@@ -128,7 +129,7 @@ nav ul {
     list-style-type: none;
     text-align: center;
     padding: 0;
-    margin: 10px 0 0;
+    margin: 0;
 }
 
 nav ul li {
@@ -138,12 +139,19 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #eee;
+    color: #000;
     font-weight: 600;
 }
 
 nav ul li a:hover {
-    color: #42fdbf;
+    color: #eee;
+}
+.active{
+    background-color: #64ffcb;
+    border-radius: 20px;
+    padding: 10px 15px;
+    font-size: 1.1em;
+    font-weight: 600p;
 }
 .nav-icon{
   
@@ -151,6 +159,7 @@ nav ul li a:hover {
 #login-register-button {
     background-color: #42fdbf;
     color: #131313;
+    text-align: center;
     border-radius: 20px;
     padding: 10px 15px;
     font-size: 0.85em;
@@ -160,8 +169,9 @@ nav ul li a:hover {
 
 /* start: hero styles */
 #hero-image {
-    background: url(IMAGE/b1.png) top center no-repeat;
-    height: 820px;
+    background: url(IMAGE/b2.png) top center no-repeat;
+    height: 800px;
+    
 }
 
 .hero-marketing-text {
@@ -214,25 +224,25 @@ nav ul li a:hover {
 #latest-news .flex {
     justify-content: flex-start;
     max-width: 100%;
+    max-height:70px;
     padding: 0;
 }
-
 #latest-news .flex h5 {
     flex-basis: 25%;
     background-color: #64ffcb;
-
     padding: 25px;
     margin: 0;
-    text-align: right;
+    text-align:center;
     color: rgb(54, 54, 54);
     font-size: 1.8em;
+    
 }
-
 #latest-news-container {
     background-color: #363535;
     position: relative;
     flex-basis: 75%;
     padding: 25px;
+    
 }
 
 #latest-news-container .badge {
@@ -257,6 +267,7 @@ nav ul li a:hover {
     transition:200ms;
     box-shadow:2px 5px 20px #000;
     cursor: pointer;
+    
 }
 
 #game-types-boxes .box.new {
@@ -621,11 +632,20 @@ footer ul li a {
         margin: 0 12px;
         font-size: 0.85em;
     }
-
+ /*start latest games */   
     #latest-news .flex h5 {
         width: 15%;
+        margin-bottom: 200px;
+        
     }
-
+    .latest-news-item{
+        margin-top:-14px;
+    }
+    #latest-news .flex{
+        height:10px;
+        width: 100%;
+    }
+/*end latest gaems*/
     #game-types-boxes .flex {
         flex-wrap: wrap;
     }
